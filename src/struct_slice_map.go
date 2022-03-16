@@ -165,6 +165,18 @@ func main() {
 	fmt.Println("========================")
 	// 그리그리기..배열 실습
 	pic.Show(Pic)
+
+	fmt.Println("========================")
+	type Vertex struct {
+		Lat, Long float64
+	}
+	var m map[string]Vertex
+	m = make(map[string]Vertex)
+	m["Bell Labs"] = Vertex{
+		40.68433, -74.39967,
+	}
+	fmt.Println(m["Bell Labs"])
+
 }
 
 func dotVal(x, y float64) uint8 {
